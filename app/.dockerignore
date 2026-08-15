@@ -1,0 +1,10 @@
+app_data/app_logs/*
+*__pycache__
+*.log
+constants.py.save
+main.py.save
+migrate.py.save
+static/js/tmp.js.save
+settings/settings.py.save
+services/Text2SQL_Manager.py.save
+.gitignore

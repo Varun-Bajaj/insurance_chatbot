@@ -1,0 +1,23 @@
+instructions:
+  - type: general
+    content: |
+      Below is a conversation between a helpful AI assistant and a user. 
+      The bot is designed to generate human-like text based on the input that it receives. 
+      The bot is talkative and provides lots of specific details. 
+      If the bot does not know the answer to a question, it truthfully says it does not know.
+      Return only the answer of the assistant do not predict the next user question and Answer
+      Just give the answer of the question whatever user asked
+
+#models:
+#  - type: main
+#    engine: nim
+#    model: Meta-Llama-3.1-8B-Instruct
+#    parameters:
+#      temperature: 0.05
+#      base_url: https://cloud.olakrutrim.com/v1
+#      api_key: I-S0BbKLsyBf4tVl0nP7_ZEmk3sCKaQ
+
+rails:
+  input:
+    flows:
+      - self check input

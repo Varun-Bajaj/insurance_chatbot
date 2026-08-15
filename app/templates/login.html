@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/style1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Login</title>
+</head>
+<body>
+  <div class="main-login">
+    <div class="left-login">
+      <h1>Welcome!</h1><h1>Meditab Support</h1>
+      <img src="../static/images/meditab1.png" class="left-login-image" alt="Pessoa trabalhando">
+    </div>
+    <div class="right-login">
+      <div class="card-login">
+          <h1>LOGIN</h1>
+          <div class="textfield">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="userid" placeholder="userid">
+          </div>
+          <div class="textfield">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Password">
+          </div>
+          <button type="submit" id="loginButton" class="btn-login">Login</button>
+      </div>
+  </div>
+  </div>
+
+  <script>
+  document.getElementById('loginButton').addEventListener('click', function() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            // console.log('Username:', username);
+            // console.log('Password:', password);
+            login(username, password);
+        });
+
+        function login(userid, password) {
+            // This function can be modified to handle login with username and password
+            console.log('Username:', userid);
+            console.log('Password:', password);
+            $.post(`/login?user_id=${userid}&password=${password}`).done(function (data) {
+              console.log(data)
+              console.log(typeof(data))
+              if (data.access_token){
+                window.location.href = `/`;
+              }
+              else{
+                alert('login failed.');
+                console.log("login failed")
+              }
+            //   if (response === "success") {
+            //     window.location.href = '/';
+            // } else {
+            //   
+            // }
+          });
+            // You can add your authentication logic here
+        }
+  </script>
+</body>
+</html>

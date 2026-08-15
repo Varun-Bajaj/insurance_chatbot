@@ -1,0 +1,609 @@
+[
+    {
+        "Table_Name": "alembic_version",
+        "field": [
+            "version_num"
+        ]
+    },
+    {
+        "Table_Name": "authorizationcode",
+        "field": [
+            "id",
+            "client_id",
+            "user_id",
+            "scopes",
+            "code",
+            "expires_at",
+            "valid",
+            "redirect_uri"
+        ]
+    },
+    {
+        "Table_Name": "bearertoken",
+        "field": [
+            "id",
+            "client_id",
+            "user_id",
+            "scopes",
+            "access_token",
+            "refresh_token",
+            "state",
+            "expires_at",
+            "is_revoked",
+            "token_type",
+            "is_boolean"
+        ]
+    },
+    {
+        "Table_Name": "canister_tickets",
+        "field": [
+            "id",
+            "unique_drug_id",
+            "company_id",
+            "request_type",
+            "reason",
+            "drug_usage",
+            "pack_usage",
+            "canister_quantity",
+            "ticket_status",
+            "odoo_stage",
+            "pharmacy_ticket_id",
+            "old_canister_id",
+            "odoo_ticket_id",
+            "created_date",
+            "modified_date"
+        ]
+    },
+    {
+        "Table_Name": "client",
+        "field": [
+            "id",
+            "name",
+            "client_id",
+            "is_active",
+            "user_id",
+            "grant_type",
+            "response_type",
+            "scopes",
+            "redirect_uris",
+            "client_secret"
+        ]
+    },
+    {
+        "Table_Name": "company",
+        "field": [
+            "id",
+            "name",
+            "email_id",
+            "contact_no",
+            "alternate_contact_no",
+            "website_url",
+            "status",
+            "registration_code",
+            "company_created",
+            "fax_no",
+            "domain",
+            "created_by",
+            "created_time",
+            "registered_web_host"
+        ]
+    },
+    {
+        "Table_Name": "contact",
+        "field": [
+            "id",
+            "first_name",
+            "last_name",
+            "phone_id",
+            "email_id"
+        ]
+    },
+    {
+        "Table_Name": "custom_drug_shape",
+        "field": [
+            "id",
+            "name",
+            "image_name",
+            "help_video_name",
+            "is_deleted"
+        ]
+    },
+    {
+        "Table_Name": "documents",
+        "field": [
+            "id",
+            "is_active",
+            "is_deleted",
+            "path",
+            "created_by",
+            "modified_by",
+            "group_id",
+            "group_provider_id",
+            "provider_id",
+            "created_at",
+            "modified_at",
+            "name"
+        ]
+    },
+    {
+        "Table_Name": "documents_type",
+        "field": [
+            "id",
+            "name",
+            "is_group_level",
+            "is_provider_level",
+            "is_group_is_provider_level",
+            "created_by",
+            "modified_by",
+            "created_at",
+            "modified_at"
+        ]
+    },
+    {
+        "Table_Name": "drug_dimension",
+        "field": [
+            "id",
+            "unique_drug_id",
+            "width",
+            "length",
+            "depth",
+            "fillet",
+            "approx_volume",
+            "shape",
+            "created_date",
+            "modified_date",
+            "created_by",
+            "modified_by",
+            "verification_status_id",
+            "verified_by",
+            "verified_date",
+            "rejection_note",
+            "company_id"
+        ]
+    },
+    {
+        "Table_Name": "drug_dimension_history",
+        "field": [
+            "id",
+            "drug_dimension_id",
+            "width",
+            "length",
+            "depth",
+            "fillet",
+            "approx_volume",
+            "shape",
+            "created_date",
+            "modified_date",
+            "image_name",
+            "created_by",
+            "modified_by",
+            "verification_status_id",
+            "verified_by",
+            "verified_date",
+            "rejection_note",
+            "company_id",
+            "is_manual",
+            "stick_recommendation_data"
+        ]
+    },
+    {
+        "Table_Name": "drug_master",
+        "field": [
+            "id",
+            "drug_name",
+            "ndc",
+            "formatted_ndc",
+            "strength",
+            "strength_value",
+            "manufacturer",
+            "txr",
+            "imprint",
+            "color",
+            "shape",
+            "image_name",
+            "brand_flag",
+            "brand_drug",
+            "drug_form",
+            "upc",
+            "generic_drug",
+            "package_size",
+            "label_name"
+        ]
+    },
+    {
+        "Table_Name": "forms",
+        "field": [
+            "id",
+            "is_deleted",
+            "status",
+            "data",
+            "created_by",
+            "modified_by",
+            "group_id",
+            "provider_id",
+            "form_type",
+            "created_at",
+            "modified_at"
+        ]
+    },
+    {
+        "Table_Name": "group_activity",
+        "field": [
+            "id",
+            "group_id",
+            "activity_type",
+            "activity_details",
+            "created_by",
+            "modified_by",
+            "created_at",
+            "modified_at",
+            "is_active"
+        ]
+    },
+    {
+        "Table_Name": "group_speciality_mapping",
+        "field": [
+            "id",
+            "group_id",
+            "speciality_id"
+        ]
+    },
+    {
+        "Table_Name": "groups",
+        "field": [
+            "group_name",
+            "verification_status",
+            "deal_stage",
+            "deal_closed_date",
+            "created_at",
+            "created_by",
+            "modified_at",
+            "modified_by",
+            "is_active",
+            "primary_location_id",
+            "id",
+            "group_phase",
+            "group_primary_provider_id",
+            "group_priority",
+            "group_status",
+            "office_type",
+            "creation_type",
+            "deal_length",
+            "group_owner_name",
+            "tax_id",
+            "primary_contact_id",
+            "group_npi",
+            "group_unique_id",
+            "group_server_id"
+        ]
+    },
+    {
+        "Table_Name": "insurances",
+        "field": [
+            "id",
+            "provider_name",
+            "policy_number"
+        ]
+    },
+    {
+        "Table_Name": "locations",
+        "field": [
+            "id",
+            "city",
+            "state",
+            "zip_code",
+            "country",
+            "country_code",
+            "county",
+            "created_at",
+            "created_by",
+            "is_active",
+            "latitude",
+            "longitude",
+            "modified_at",
+            "modified_by",
+            "state_code",
+            "street_address_0",
+            "street_address_1"
+        ]
+    },
+    {
+        "Table_Name": "misc",
+        "field": [
+            "id",
+            "misc_type_id",
+            "misc_description",
+            "created_by",
+            "modified_by",
+            "created_at",
+            "modified_at",
+            "is_active",
+            "misc_detail_desc",
+            "code"
+        ]
+    },
+    {
+        "Table_Name": "misc_type",
+        "field": [
+            "id",
+            "misc_type_description",
+            "created_by",
+            "modified_by",
+            "created_at",
+            "modified_at",
+            "is_active",
+            "code"
+        ]
+    },
+    {
+        "Table_Name": "patients",
+        "field": [
+            "id",
+            "name",
+            "age",
+            "home_address_id",
+            "office_address_id",
+            "insurance_id"
+        ]
+    },
+    {
+        "Table_Name": "pharmacy_master",
+        "field": [
+            "id",
+            "name"
+        ]
+    },
+    {
+        "Table_Name": "phone_number",
+        "field": [
+            "id",
+            "prefix",
+            "number",
+            "country_code"
+        ]
+    },
+    {
+        "Table_Name": "practices",
+        "field": [
+            "id",
+            "practice_primary_group_id",
+            "phone_number_id",
+            "location_id",
+            "contact_id",
+            "pract_back_line",
+            "pract_languages_spoken",
+            "pract_tax_id",
+            "pract_wait_time_physician",
+            "pract_wait_time_appointment",
+            "pract_answering_service",
+            "pract_answering_machine",
+            "pract_emergency_phone",
+            "pract_mobile_phone",
+            "pract_hospital",
+            "pract_other_explain",
+            "pract_wheelchair_accessible",
+            "pract_handicap_parking",
+            "pract_effective_date",
+            "pract_termination_date",
+            "pract_mcaid",
+            "pract_mcaid_effectdate",
+            "pract_mcaid_termdate",
+            "pract_name",
+            "pract_npi",
+            "created_by",
+            "modified_by",
+            "created_at",
+            "modified_at",
+            "is_active",
+            "practice_server_id"
+        ]
+    },
+    {
+        "Table_Name": "provider",
+        "field": [
+            "id",
+            "provider_name",
+            "provider_npi",
+            "medicaid_id",
+            "serves_medicaid",
+            "medicare_id",
+            "medical_license",
+            "health_plans_accepted",
+            "created_at",
+            "created_by",
+            "modified_at",
+            "modified_by",
+            "is_active",
+            "external_id"
+        ]
+    },
+    {
+        "Table_Name": "provider_group_mapping",
+        "field": [
+            "id",
+            "group_id",
+            "provider_id"
+        ]
+    },
+    {
+        "Table_Name": "provider_practice_mapping",
+        "field": [
+            "id",
+            "provider_id",
+            "practice_id",
+            "created_at",
+            "modified_at"
+        ]
+    },
+    {
+        "Table_Name": "secrets",
+        "field": [
+            "id",
+            "key",
+            "value"
+        ]
+    },
+    {
+        "Table_Name": "source",
+        "field": [
+            "id",
+            "name",
+            "created_by",
+            "modified_by",
+            "created_at",
+            "modified_at"
+        ]
+    },
+    {
+        "Table_Name": "source_verification_fields",
+        "field": [
+            "id",
+            "verification_source_type",
+            "field_name",
+            "field_value",
+            "pdf_file_name",
+            "box_x",
+            "box_y",
+            "box_length",
+            "box_width",
+            "group_id",
+            "link_type",
+            "created_at",
+            "created_by",
+            "modified_at",
+            "modified_by",
+            "source_group_link",
+            "source_id"
+        ]
+    },
+    {
+        "Table_Name": "specialities",
+        "field": [
+            "id",
+            "speciality_name"
+        ]
+    },
+    {
+        "Table_Name": "store",
+        "field": [
+            "id",
+            "name",
+            "region",
+            "timezone",
+            "comm_ip"
+        ]
+    },
+    {
+        "Table_Name": "token",
+        "field": [
+            "id",
+            "user_id",
+            "token",
+            "expires_on",
+            "is_revoked",
+            "created_on",
+            "modified_on"
+        ]
+    },
+    {
+        "Table_Name": "topic_master",
+        "field": [
+            "id",
+            "topic_id",
+            "company_id",
+            "topic_name"
+        ]
+    },
+    {
+        "Table_Name": "trigger_config",
+        "field": [
+            "id",
+            "trigger_id",
+            "store_id",
+            "trigger_time",
+            "offset",
+            "last_triggered",
+            "created_at",
+            "created_by",
+            "is_active"
+        ]
+    },
+    {
+        "Table_Name": "trigger_history",
+        "field": [
+            "id",
+            "trigger_config_id",
+            "file_name",
+            "store_id",
+            "created_at",
+            "data"
+        ]
+    },
+    {
+        "Table_Name": "trigger_master",
+        "field": [
+            "id",
+            "name",
+            "desc",
+            "created_at",
+            "type_id"
+        ]
+    },
+    {
+        "Table_Name": "trigger_type",
+        "field": [
+            "id",
+            "name"
+        ]
+    },
+    {
+        "Table_Name": "unique_drug",
+        "field": [
+            "id",
+            "formatted_ndc",
+            "txr",
+            "is_powder_pill",
+            "dosage_type",
+            "packaging_type",
+            "coating_type",
+            "is_zip_lock_drug",
+            "unit_weight",
+            "modified_date"
+        ]
+    },
+    {
+        "Table_Name": "user",
+        "field": [
+            "id",
+            "username",
+            "ips_user_name",
+            "first_name",
+            "last_name",
+            "email",
+            "password",
+            "pin",
+            "is_active",
+            "last_login",
+            "failed_login_count",
+            "is_locked",
+            "company_id",
+            "is_dosepack_admin",
+            "image_name",
+            "idle_time"
+        ]
+    },
+    {
+        "Table_Name": "user_trigger",
+        "field": [
+            "id",
+            "trigger_config_id",
+            "store_id",
+            "is_email",
+            "is_whatsapp",
+            "created_at",
+            "created_by",
+            "user_id",
+            "threshold_data"
+        ]
+    }
+]

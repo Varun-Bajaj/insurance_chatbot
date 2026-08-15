@@ -1,0 +1,16 @@
+logs/config/*
+logs/mappinglist/*
+logs/logs/*
+logs/root.log
+app_data/app_logs/*
+Chatbot_data/Chatbot_app_logs/*
+settings/settings.py.save
+services/Text2SQL_Manager.py.save
+**/__pycache__/
+constants.py.save
+main.py.save
+migrate.py.save
+static/js/tmp.js.save
+memory.db
+VectorDB_files/*
+data/*

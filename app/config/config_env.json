@@ -1,0 +1,59 @@
+{
+  "embedding_model": "BAAI/bge-base-en-v1.5",
+  "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "OLLAMA":  {
+    "main_model": "qwen2.5-coder:14b-instruct-q8_0",
+    "base_url": "http://localhost:11420",
+    "temperature": 0.05,
+    "num_ctx": 20000
+  },
+  "GREETINGS":  {
+    "main_model": "llama3.2:3b-instruct-q4_0",
+    "base_url": "http://localhost:11421",
+    "temperature": 0.02,
+    "num_ctx": 8192
+  },
+  "KRUTRIM": {
+    "main_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+    "base_url": "https://api.studio.nebius.com/v1",
+    "temperature": 0.05,
+    "api_key": "eyJhbGciOiJIUzI1NiIsImtpZCI6IlV6SXJWd1h0dnprLVRvdzlLZWstc0M1akptWXBvX1VaVkxUZlpnMDRlOFUiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJnb29nbGUtb2F1dGgyfDExMjQ1OTQ5NzIzNTk5OTUyODkyNyIsInNjb3BlIjoib3BlbmlkIG9mZmxpbmVfYWNjZXNzIiwiaXNzIjoiYXBpX2tleV9pc3N1ZXIiLCJhdWQiOlsiaHR0cHM6Ly9uZWJpdXMtaW5mZXJlbmNlLmV1LmF1dGgwLmNvbS9hcGkvdjIvIl0sImV4cCI6MTkwNjk2NDU4MywidXVpZCI6ImJhNGE1ZWVlLTU4NTYtNGE2NC05NjlmLWIxNGViYWNlOWRjNCIsIm5hbWUiOiJEQiBwcm9qZWN0IiwiZXhwaXJlc19hdCI6IjIwMzAtMDYtMDZUMDg6MjM6MDMrMDAwMCJ9.hyIrYIWEjHpXbFxokBesedfJu4f1UO-2e-btGVkzxk8",
+    "num_ctx": 20000,
+    "instruction_model": "meta-llama/Llama-3.3-70B-Instruct",
+    "instruction_base_url": "https://api.studio.nebius.com/v1",
+    "instruction_temperature": 0.6,
+    "instruction_num_ctx": 8192,
+    "instruction_api_key": "eyJhbGciOiJIUzI1NiIsImtpZCI6IlV6SXJWd1h0dnprLVRvdzlLZWstc0M1akptWXBvX1VaVkxUZlpnMDRlOFUiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJnb29nbGUtb2F1dGgyfDExNjk3NDU3ODAxOTMwMTE2MDc2MCIsInNjb3BlIjoib3BlbmlkIG9mZmxpbmVfYWNjZXNzIiwiaXNzIjoiYXBpX2tleV9pc3N1ZXIiLCJhdWQiOlsiaHR0cHM6Ly9uZWJpdXMtaW5mZXJlbmNlLmV1LmF1dGgwLmNvbS9hcGkvdjIvIl0sImV4cCI6MTkwODQ2NzI1NSwidXVpZCI6IjNkZDRmNTMxLWRiMWQtNDM5Mi04OGEyLWExNDI0NzNiMWQwOCIsIm5hbWUiOiJjaGF0Ym90IGxsYW1hIiwiZXhwaXJlc19hdCI6IjIwMzAtMDYtMjNUMTc6NDc6MzUrMDAwMCJ9.dlSo9PVHBheGYYHlrOygjRV18pDNfy41swbIjdnZvXs"
+  },
+  "DPWS_DATABASE": {
+    "db_password": "MTIzNDU2Nzg=",
+    "db_username": "root",
+    "db_host": "0.0.0.0",
+    "db_port": 3306,
+    "db_name": "careloop"
+  },
+  "MODEL": 2,
+  "huggingface_token": "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",
+  "langsmith_api_key": "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",
+  "langsmith_project": "Careloop_Text_2_SQL",
+  "langsmith_endpoint": "https://api.smith.langchain.com",
+  "langsmith_tracing": "true",
+  "flag_store_query": 1,
+  "flag_ollama_config": 1,
+  "faqs_documents_path": "faqs.xlsx",
+  "vector_db": 2,
+  "SERVER_IP_ADDRESS": "0.0.0.0",
+  "SERVER_PORT_ADDRESS": 5559,
+  "NUMBER_OF_MODEL_PIPELINE": 1,
+  "MAX_NUMBER_OF_PIPELINES": 8,
+  "API_BASED_QUERY_RESPONSE": 0,
+  "SOURCE_DIRECTORY_LOCATION" : "json",
+  "FAQS_CHROMADB_DISTANCE": 0.40,
+  "FAQS_THRESHOLD": 0.90,
+  "API_THRESHOLD": 0.58,
+  "API_CHROMADB_DISTANCE": 0.40,
+  "APPROACH": 1,
+  "MAINTAIN_CONVERSATION_HISTORY_COUNT": 10,
+  "CRM_IP_ADDRESS": "160.250.204.85",
+  "CRM_PORT": "10022"
+}

@@ -1,0 +1,11 @@
+you are a helpful assistant
+
+your task is:
+
+    Extract the full person name from the query if present.
+    Return only the name and nothing else.
+    If no name is present, return "NONE".
+
+
+input:
+query: "{query}"

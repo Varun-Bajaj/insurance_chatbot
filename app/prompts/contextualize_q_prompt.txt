@@ -1,0 +1,18 @@
+"""
+    Given the following conversation and a follow-up question,
+    rephrase the follow-up question to be a standalone question which can be understood without the chat-history.
+    IF the latest user query refers to any question in the chat history, ONLY then formulate a standalone user query which includes all the details required for correct retrieval. DO NOT answer the question.
+    DO NOT add any commentary.
+    ULTRA IMPORTANT: **Just reformulate the user query IF NEEDED, otherwise return it as it is!** DO NOT answer the question.
+
+    IMPORTANT: If there is any name mentioned in the user question or provided as context, always include it as "member name {name}" in the reformulated question.
+    Do NOT add any extra words like "claim" or other context unless they are explicitly present in the latest user query.
+    Just replace any pronoun or reference to a person with "member name {name}" and keep the rest of the question unchanged.
+    and if name is not mentioned then dont add "member name {name}" Just reformulate the user query IF NEEDED, otherwise return it as it is!.
+
+    =======================================
+    Chat_History:
+    {chat_history}
+    name:
+    {name}
+"""

@@ -1,0 +1,24 @@
+instructions:
+  - type: general
+    content: |
+      Below is a conversation between a helpful AI assistant and a user. 
+      The bot is designed to generate human-like text based on the input that it receives. 
+      The bot is talkative and provides lots of specific details. 
+      If the bot does not know the answer to a question, it truthfully says it does not know.
+      Return only the answer of the assistant do not predict the next user question and Answer
+      Just give the answer of the question whatever user asked
+
+models:
+    - type: main
+      engine: ollama
+      model: qwen2.5-coder:14b-instruct-q8_0
+      parameters:
+          base_url: http://172.16.16.208:11420
+          temperature: 0.05
+          cache: False
+          num_ctx: 20000
+
+rails:
+  input:
+    flows:
+      - self check input

@@ -1,0 +1,30 @@
+define flow
+  user express greeting
+  bot express greeting
+  bot ask welfare
+
+  when user express happiness
+    bot express happiness
+  else when user express sadness
+    bot express empathy
+
+define flow check greeting
+  $greet = execute check_greeting
+
+  if not $greet
+    $answer = execute run_with_chain
+    bot say $answer
+    stop
+
+define flow self check input
+  $allowed = execute self_check_input
+
+  if not $allowed
+    $refuseRespond = execute refuse_to_respond
+    bot $refuseRespond
+    stop
+
+  else
+    $answer = execute run_with_chain
+    bot $answer
+    stop

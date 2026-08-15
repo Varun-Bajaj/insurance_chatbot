@@ -1,0 +1,114 @@
+[
+    {
+        "authorizationcode": [
+            "client",
+            "user"
+        ],
+        "bearertoken": [
+            "client",
+            "user"
+        ],
+        "canister_tickets": [
+            "unique_drug"
+        ],
+        "client": [
+            "user"
+        ],
+        "contact": [
+            "phone_number"
+        ],
+        "documents": [
+            "user",
+            "groups",
+            "provider_group_mapping",
+            "provider"
+        ],
+        "documents_type": [
+            "user"
+        ],
+        "drug_dimension": [
+            "custom_drug_shape",
+            "unique_drug"
+        ],
+        "drug_dimension_history": [
+            "drug_dimension",
+            "custom_drug_shape"
+        ],
+        "forms": [
+            "user",
+            "misc",
+            "groups",
+            "provider"
+        ],
+        "group_activity": [
+            "misc",
+            "groups"
+        ],
+        "group_speciality_mapping": [
+            "groups",
+            "specialities"
+        ],
+        "groups": [
+            "user",
+            "contact",
+            "locations",
+            "provider",
+            "misc"
+        ],
+        "locations": [
+            "user"
+        ],
+        "misc": [
+            "misc_type"
+        ],
+        "patients": [
+            "locations",
+            "insurances"
+        ],
+        "practices": [
+            "contact",
+            "user",
+            "locations",
+            "phone_number",
+            "groups"
+        ],
+        "provider": [
+            "user"
+        ],
+        "provider_group_mapping": [
+            "groups",
+            "provider"
+        ],
+        "provider_practice_mapping": [
+            "practices",
+            "provider"
+        ],
+        "source_verification_fields": [
+            "misc",
+            "groups",
+            "source"
+        ],
+        "token": [
+            "user"
+        ],
+        "trigger_config": [
+            "store",
+            "trigger_master"
+        ],
+        "trigger_history": [
+            "store",
+            "trigger_config"
+        ],
+        "trigger_master": [
+            "trigger_type"
+        ],
+        "user": [
+            "company"
+        ],
+        "user_trigger": [
+            "store",
+            "trigger_config",
+            "user"
+        ]
+    }
+]
